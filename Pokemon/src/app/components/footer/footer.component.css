@@ -1,0 +1,8 @@
+mat-grid-tile-footer{
+    background-color: rgb(255, 0, 51);
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
