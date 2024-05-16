@@ -1,5 +1,14 @@
-<mat-grid-list cols="1">
-    <mat-grid-tile-header>
-        Pokemón
-    </mat-grid-tile-header>
-</mat-grid-list>
+<style>
+    @import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+</style>
+
+
+<div class="header">
+    <div class="title">
+        Pokémon
+    </div>
+
+    <div class="btn" *ngIf='login'>
+        <button mat-stroked-button color="warn" (click)="logOut()">LogOut</button>
+    </div>
+</div>

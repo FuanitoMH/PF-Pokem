@@ -1,0 +1,9 @@
+
+.body {
+    /* position: relative; */
+    height: 85vh;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    
+}

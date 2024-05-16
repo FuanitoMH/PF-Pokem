@@ -1,0 +1,43 @@
+<style>
+  @import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+  
+  .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
+            
+</style>
+
+<div class="content">
+  
+  <div class="btn">
+    <button mat-raised-button (click)="openDialog()">Post Pokémon</button>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Url</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let dato of pokemon_values">
+        <td>{{ dato.name }}</td>
+        <td>{{ dato.url }}</td>
+        <td>
+          <button mat-mini-fab color="warn" (click)="deletePokemon(dato.name)">
+            <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="delete"></mat-icon>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+</div>
+
+

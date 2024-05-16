@@ -1,0 +1,19 @@
+<style>
+    @import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+</style>
+
+<div class="container">
+    <form [formGroup]="loginForm" (ngSubmit)="validateUser()">
+        <p class="title">Log In</p>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" formControlName="username">
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" formControlName="password">
+        
+        <div class="btn">
+            <button type="submit">Accept</button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,22 @@
+<style>
+    button{
+        background-color: #4CAF50;
+    }
+
+</style>
+
+<h2 mat-dialog-title>Add Pokémon</h2>
+<mat-dialog-content>
+  <mat-form-field>
+    <mat-label>Name</mat-label>
+    <input matInput [(ngModel)]="data.name">
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <mat-label>Url</mat-label>
+    <input matInput [(ngModel)]="data.url">
+  </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions style="justify-content: end;">
+  <button mat-button [mat-dialog-close]="{name:data.name, url:data.url}" cdkFocusInitial>Post</button>
+</mat-dialog-actions>

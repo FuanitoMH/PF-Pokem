@@ -1,0 +1,92 @@
+*{
+    font-family: 'Pokemon Solid', sans-serif;
+}
+                                               
+.container{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('../../../assets/fondo-pokemon.avif');
+    background-repeat: repeat;
+    background-size: 20vw;
+    filter: blur(10px);
+    z-index: -1;
+}
+.container:only-child::before {
+    filter: blur(1.5px);
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 20vw;
+    padding: 0px 30px 20px 30px;
+    border-radius: 10px;
+}
+
+.title{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    letter-spacing: 3px;
+    color: #1c1e15;
+}
+
+label{
+    font-size: 13px;
+    letter-spacing: 3px;
+    display: inline;
+    color: #d2d5c1;
+    -webkit-text-stroke: 1px #1c1e15;
+}
+
+input{
+    display:inline;
+    position: relative;
+    top: -7px;
+    color: #3f4331;
+    background: #e7e9de;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    letter-spacing: 3px;
+    padding: 0 10px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    margin-top: 10vh;
+    border: none;
+    font-size: 17px;
+    width: 100%;
+    letter-spacing: 3px;
+    color: #f4f5f0;
+    background-color: #8d9569;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+button:hover{
+    background-color: #4c513a;
+    width: 95%;
+}
